@@ -484,15 +484,19 @@ img {
   align-items: center;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1024px){
 
-  .top__home__container {
-    margin-top: 4rem;
+  .section {
+    padding-block: 6rem 1rem;
   }
 
-}
+  .home {
+    margin-top: 3rem;
+  }
 
-@media screen and (min-width: 1024px){
+  .clients__row {
+    justify-content: space-between;
+  }
 
   .header {
     width: 100%;
@@ -540,10 +544,6 @@ img {
     width: 126px;
     height: 46px;
     margin-top: 0;
-  }
-
-  .section {
-    padding-block: 6rem 1rem;
   }
 
    .footer__container {
