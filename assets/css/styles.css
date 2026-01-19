@@ -231,13 +231,16 @@ img {
 
 .nav__btn {
   background-color: var(--first-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--white-color);
-  padding: 12px 32px;
-  font-size: var(--font-regular);
+  font-size: 18px;
   font-weight: var(--font-semi-bold);
   border-radius: 16px;
   text-align: center;
-  width: 126px;
+  width: 158px;
+  height: 56px;
   margin-top: 1rem;
 }
 
