@@ -20,11 +20,11 @@
   --body-font: "Open Sans", sans-serif;
   --bigger-font-size: 2.5rem;
   --h1-font-size: 2rem;
-  --h2-font-size: 1.625rem;
-  --h3-font-size: 1.25rem;
-  --h4-font-size: 1rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
+  --h2-font-size: 1.75rem;
+  --h3-font-size: 1.375rem;
+  --h4-font-size: 1.125rem;
+  --normal-font-size: .9375rem;
+  --small-font-size: .8125rem;
 
   /*========== Font weight ==========*/
   --font-regular: 400;
@@ -72,6 +72,7 @@ body {
 button {
   outline: none;
   border: none;
+  cursor: pointer;
 }
 
 h1 {
@@ -123,7 +124,6 @@ img {
   font-size: var(--h1-font-size);
   font-weight: var(--font-bold);
   color: var(--first-color);
-  margin-bottom: 1.5rem;
 }
 
 .main {
@@ -329,14 +329,15 @@ img {
 .services__container {
   border: 4px solid var(--white-color);
   border-radius: 16px;
-  padding: 16px;
+  padding: 48px 16px;
+  gap: 2rem;
 }
 
 .services__cards__row {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .services__card {
@@ -356,7 +357,25 @@ img {
 }
 
 
-/*=============== PROJECTS ===============*/
+/*=============== ABOUT ===============*/
+.about__container {
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.about__header {
+  gap: 8px;
+}
+
+.about__img {
+  width: 160px;
+  justify-self: center;
+}
+
+.about__btn {
+  justify-self: center;
+}
 
 
 /*=============== RESUME ===============*/
