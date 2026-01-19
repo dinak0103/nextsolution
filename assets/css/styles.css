@@ -18,13 +18,15 @@
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Open Sans", sans-serif;
-  --bigger-font-size: 2.5rem;
-  --h1-font-size: 2rem;
-  --h2-font-size: 1.75rem;
-  --h3-font-size: 1.375rem;
+  --bigger-font-size: 3rem;
+  --h1-font-size: 1.75rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
   --h4-font-size: 1.125rem;
-  --normal-font-size: .9375rem;
-  --small-font-size: .8125rem;
+  --h5-font-size: 1rem;
+  --h6-font-size: 0.875rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
 
   /*========== Font weight ==========*/
   --font-regular: 400;
@@ -39,12 +41,12 @@
 @media screen and (min-width: 1150px) {
   :root {
     --bigger-font-size: 4rem;
-    --h1-font-size: 3rem;
-    --h2-font-size: 2.25rem;
-    --h3-font-size: 1.625rem;
+    --h1-font-size: 2.5rem;
+    --h2-font-size: 2rem;
+    --h3-font-size: 1.5rem;
     --h4-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-    --small-font-size: .875rem;
+    --h5-font-size: 1rem;
+    --h6-font-size: 0.875rem;
   }
 }
 
@@ -106,7 +108,7 @@ img {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  max-width: 1120px;
+  max-width: 1200px;
   margin-inline: 1.5rem;
 }
 
@@ -227,7 +229,12 @@ img {
   color: var(--first-color);
   font-size: var(--h4-font-size);
   text-transform: uppercase;
-  font-weight: var(--font-semi-bold)
+  font-weight: var(--font-semi-bold);
+  transition: color 0.4s;
+}
+
+.nav__link:hover {
+  color: var(--gray-color);
 }
 
 .nav__close {
@@ -253,8 +260,13 @@ img {
   width: 158px;
   height: 56px;
   margin-top: 1rem;
+  transition: background-color 0.4s;
 }
 
+.nav__btn:hover,
+.main__btn:hover {
+  background-color: #04004b;
+}
 
 /*=============== HOME ===============*/
 .home__container {
@@ -298,6 +310,7 @@ img {
   text-align: center;
   width: 158px;
   height: 56px;
+  transition: background-color 0.4s;
 }
 
 .read__more {
@@ -338,9 +351,9 @@ img {
 .cases__cards__row,
 .reviews__cards__row {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1rem;
+  justify-content: center;
 }
 
 .services__card,
@@ -349,6 +362,11 @@ img {
   background-color: var(--white-color);
   border-radius: 16px;
   padding: 16px;
+  align-content: space-between;
+}
+
+.services__card {
+  max-width: 369px;
 }
 
 .services__title,
@@ -368,6 +386,8 @@ img {
   justify-content: center;
   text-align: center;
   gap: 2rem;
+  max-width: 790px;
+  justify-self: center;
 }
 
 .about__header {
@@ -385,7 +405,16 @@ img {
 }
 
 
+/*=============== CASES ===============*/
+.cases__card {
+  max-width: 569px;
+}
+
 /*=============== REVIEWS ===============*/
+.reviews__card {
+  max-width: 380px;
+}
+
 .reviews__heading {
   display: flex;
   justify-content: space-between;
@@ -420,6 +449,7 @@ img {
 
 /*=============== FOOTER ===============*/
 .footer {
+  margin-top: 40px;
   background-color: var(--first-color);
   color: var(--white-color);
   font-size: var(--small-font-size);
@@ -454,15 +484,84 @@ img {
   align-items: center;
 }
 
+@media screen and (min-width: 768px){
 
-/*=============== BREAKPOINTS ===============*/
-/* For small devices */
+  .top__home__container {
+    margin-top: 4rem;
+  }
 
+}
 
-/* For medium devices */
+@media screen and (min-width: 1024px){
 
+  .header {
+    width: 100%;
+    top: 0;
+    height: 4rem;
+    left: 0;
+    background-color: var(--body-color);
+  }
 
-/* For large devices */
+  .nav {
+    justify-content: space-between;
+    height: 4rem;
+  }
 
+  .logo {
+    display: initial;
+  }
 
-/* For 2K resolutions (2048 x 1152, 2048 x 1536) */
+  .nav__menu {
+    width: initial;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .nav__close,
+  .toggle{
+    display: none;
+  }
+
+  .nav__list {
+    flex-direction: row;
+    padding: 0;
+    gap: 1rem;
+  }
+
+  .nav__link {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-regular);
+    text-transform: none;
+  }
+
+  .nav__btn {
+    font-size: var(--normal-font-size);
+    width: 126px;
+    height: 46px;
+    margin-top: 0;
+  }
+
+  .section {
+    padding-block: 6rem 1rem;
+  }
+
+   .footer__container {
+    gap: 2rem;
+  }
+
+  .top__footer__data,
+  .contact__footer__data,
+  .social__links,
+  .bottom__footer__data {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+}
+
+@media screen and (min-width: 1200px){
+  .container {
+    margin-inline: auto;
+  }
+}
