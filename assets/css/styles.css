@@ -121,21 +121,125 @@ img {
 
 .main {
   overflow: hidden;
+  flex: 1 1 auto;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .2); 
+  z-index: 10;
+  display: none;
 }
 
 /*=============== HEADER & NAV ===============*/
+.header {
+  position: fixed;
+  width: 100%;
+  bottom: 18px;
+  left: 0;
+  z-index: var(--z-fixed);
+}
 
+.nav {
+  position: relative;
+  height: var(--header-height);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
 
-/* Navigation for mobile devices */
+.nav__logo {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
 
+.logo {
+  display: none;
+}
 
-/* Show menu */
+.logo__img {
+  width: 22px;
+}
 
+.logo__name {
+  font-weight: var(--font-bold);
+  color: var(--first-color-alt);
+}
 
-/* Add shadow header */
+.nav__close,
+.toggle {
+  display: inline-flex;
+  cursor: pointer;
+  color: var(--first-color);
+  font-size: 24px;
+}
 
+@media screen and (max-width: 1024px) {
+  .nav__menu {
+    position: fixed;
+    bottom: 1rem;
+    right: -100%;
+    background-color: var(--body-color);
+    width: 90%;
+    padding: 2rem;
+    transition: right .4s;
+    border-radius: 16px;
+  }
+}
 
-/* Active link */
+.toggle {
+  background-color: var(--body-color);
+  border: 2px solid var(--white-color);
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, .04);
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.nav__link {
+  color: var(--first-color);
+  font-size: var(--h3-font-size);
+  text-transform: uppercase;
+  font-weight: var(--font-semi-bold)
+}
+
+.nav__close {
+  position: absolute;
+  bottom: 2.5rem;
+  right: 2rem;
+}
+
+.show-menu {
+  right: 1rem;
+}
+
+.nav__btn {
+  background-color: var(--first-color);
+  color: var(--white-color);
+  padding: 12px 32px;
+  font-size: var(--font-regular);
+  font-weight: var(--font-semi-bold);
+  border-radius: 16px;
+  text-align: center;
+  width: 126px;
+  margin-top: 1rem;
+}
 
 
 /*=============== HOME ===============*/
