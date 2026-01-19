@@ -18,10 +18,11 @@
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Open Sans", sans-serif;
-  --bigger-font-size: 2rem;
-  --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1rem;
+  --bigger-font-size: 2.5rem;
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.625rem;
+  --h3-font-size: 1.25rem;
+  --h4-font-size: 1rem;
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
 
@@ -109,7 +110,7 @@ img {
 }
 
 .section {
-  padding-block: 5rem 1rem;
+  padding-block: 3rem 1rem;
 }
 
 .section__title {
@@ -139,6 +140,10 @@ img {
   background-color: rgba(0, 0, 0, .2); 
   z-index: 10;
   display: none;
+}
+
+.center {
+  text-align: center;
 }
 
 /*=============== HEADER & NAV ===============*/
@@ -214,14 +219,14 @@ img {
 
 .nav__link {
   color: var(--first-color);
-  font-size: var(--h3-font-size);
+  font-size: var(--h4-font-size);
   text-transform: uppercase;
   font-weight: var(--font-semi-bold)
 }
 
 .nav__close {
   position: absolute;
-  bottom: 2.5rem;
+  bottom: 3rem;
   right: 2rem;
 }
 
@@ -246,10 +251,62 @@ img {
 
 
 /*=============== HOME ===============*/
+.home__container {
+  gap: 2rem;
+}
 
+.tab {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: var(--tabs--color);
+  color: var(--first-color);
+  font-weight: var(--font-semi-bold);
+  font-size: var(--small-font-size);
+  border-radius: 16px;
+  width: fit-content;
+}
+
+.main__heading {
+  font-size: var(--bigger-font-size);
+  color: var(--first-color);
+}
+
+.color__text {
+  color: var(--first-color-alt);
+}
 
 /*=============== BUTTON ===============*/
+.main__btn {
+  background-color: var(--first-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white-color);
+  font-size: 18px;
+  font-weight: var(--font-semi-bold);
+  border-radius: 16px;
+  text-align: center;
+  width: 158px;
+  height: 56px;
+}
 
+/*=============== CLIENTS ===============*/
+.clients__description {
+  color: var(--gray-color);
+  font-size: var(--small-font-size);
+}
+
+.clients__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.clients__img {
+  width: 80px;
+}
 
 /*=============== ABOUT ===============*/
 
