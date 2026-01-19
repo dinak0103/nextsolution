@@ -326,27 +326,31 @@ img {
 }
 
 /*=============== SERVICES ===============*/
-.services__container {
+.services__container,
+.cases__container {
   border: 4px solid var(--white-color);
   border-radius: 16px;
   padding: 48px 16px;
   gap: 2rem;
 }
 
-.services__cards__row {
+.services__cards__row,
+.cases__cards__row {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 2rem;
 }
 
-.services__card {
+.services__card,
+.cases__card {
   background-color: var(--white-color);
   border-radius: 16px;
   padding: 16px;
 }
 
-.services__title {
+.services__title,
+.cases__title {
   font-size: var(--h4-font-size);
 }
 
@@ -371,6 +375,7 @@ img {
 .about__img {
   width: 160px;
   justify-self: center;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, .04);
 }
 
 .about__btn {
@@ -378,10 +383,7 @@ img {
 }
 
 
-/*=============== RESUME ===============*/
-
-
-/*=============== CONTACT ===============*/
+/*=============== REVIEWS ===============*/
 
 
 /*=============== FOOTER ===============*/
