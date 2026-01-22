@@ -382,7 +382,8 @@ img {
 
 .services__card,
 .cases__card,
-.reviews__card {
+.reviews__card,
+.additional__card {
   background-color: var(--white-color);
   border-radius: 16px;
   padding: 16px;
@@ -650,10 +651,21 @@ img {
     text-align: initial;
   }
 
+  .services__description__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+  }
+
 }
 
 @media screen and (min-width: 1200px){
   .container {
     margin-inline: auto;
+  }
+
+  .services__cards__row,
+  .cases__cards__row,
+  .reviews__cards__row {
+    justify-content: space-between;
   }
 }
