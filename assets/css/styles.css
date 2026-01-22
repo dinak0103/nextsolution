@@ -80,14 +80,12 @@ h1 {
   font-weight: var(--font-bold);
   line-height: 120%;
   color: var(--first-color);
-  margin-bottom: .5rem;
 }
 
 h2, h3, h4, h5 {
   font-weight: var(--font-semi-bold);
   line-height: 120%;
   color: var(--first-color);
-  margin-bottom: .5rem;
 }
 
 h1 {
@@ -435,6 +433,11 @@ img {
 /*=============== CASES ===============*/
 .cases__card {
   max-width: 569px;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, .04);
+}
+
+.cases__card img {
+  border-radius: 8px;
 }
 
 /*=============== REVIEWS ===============*/
@@ -670,4 +673,5 @@ img {
   .reviews__cards__row {
     justify-content: space-between;
   }
+
 }
