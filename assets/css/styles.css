@@ -116,10 +116,6 @@ p {
   line-height: 160%;
 }
 
-ul {
-  list-style: none;
-}
-
 a {
   text-decoration: none;
 }
@@ -247,6 +243,7 @@ img {
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
+  list-style: none;
 }
 
 .nav__link {
@@ -606,6 +603,32 @@ img {
   border-radius: 8px;
 }
 
+.blog__container {
+  gap: 2rem;
+}
+
+.blog__heading {
+  text-align: center
+}
+
+.main__blog__image__container {
+  max-height: 450px;
+  width: 100%;
+  justify-self: center;
+  overflow: hidden;
+}
+
+.main__blog__image__container img {
+  width: 100%;
+}
+
+.blog__list {
+  margin-left: 16px;
+}
+
+.blog__link {
+  color: var(--first-color-alt);
+}
 
 @media screen and (min-width: 1024px){
 
