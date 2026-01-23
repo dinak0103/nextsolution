@@ -222,7 +222,7 @@ img {
   font-size: 24px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .nav__menu {
     position: fixed;
     bottom: 1rem;
@@ -554,6 +554,7 @@ img {
   text-align: center;
   align-items: center;
   gap: 1rem;
+  width: 126px;
 }
 
 .team__image {
@@ -570,6 +571,14 @@ img {
 
 .team__name {
   text-transform: uppercase;
+}
+
+/*==============================*/
+
+/*=============== CASES PAGE ===============*/
+
+.main__case__card {
+  max-width: 585px;
 }
 
 /*==============================*/
@@ -680,6 +689,7 @@ img {
   .team__data {
     flex-direction: row;
     text-align: initial;
+    width: initial;
   }
 
   .services__description__container {
