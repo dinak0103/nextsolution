@@ -554,7 +554,8 @@ img {
   width: 126px;
 }
 
-.team__image {
+.team__image,
+.author__image {
   border: 2px solid var(--first-color-alt);
   border-radius: 16px;
   overflow: hidden;
@@ -613,21 +614,38 @@ img {
 
 .main__blog__image__container {
   max-height: 450px;
-  width: 100%;
   justify-self: center;
   overflow: hidden;
 }
 
 .main__blog__image__container img {
-  width: 100%;
+  border-radius: 8px;
 }
 
 .blog__list {
   margin-left: 16px;
+  display: grid;
+  gap: .5rem;
 }
 
 .blog__link {
   color: var(--first-color-alt);
+}
+
+.author__block {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author__info {
+  gap: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .two__columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (min-width: 1024px){
