@@ -642,6 +642,10 @@ img {
   gap: 4px;
 }
 
+.blog__data img {
+  justify-self: center;
+}
+
 @media screen and (min-width: 768px) {
   .two__columns {
     grid-template-columns: repeat(2, 1fr);
