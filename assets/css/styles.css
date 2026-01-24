@@ -650,6 +650,10 @@ img {
   .two__columns {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .three__columns {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media screen and (min-width: 1024px){
