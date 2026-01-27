@@ -477,6 +477,7 @@ img {
 /*=============== FOOTER ===============*/
 .footer {
   margin-top: 40px;
+  padding-bottom: 3rem;
   background-color: var(--first-color);
   color: var(--white-color);
   font-size: var(--small-font-size);
@@ -681,7 +682,6 @@ img {
 
 
 
-
 @media screen and (min-width: 768px) {
   .two__columns,
   .contact__data {
@@ -755,7 +755,11 @@ img {
     margin-top: 0;
   }
 
-   .footer__container {
+  .footer {
+    padding-bottom: 0;
+  }
+
+  .footer__container {
     gap: 2rem;
   }
 
