@@ -495,7 +495,7 @@ img {
 
 .top__footer__data,
 .contact__footer__data,
-.social__links,
+.social__footer__links,
 .bottom__footer__data{
   display: flex;
   flex-direction: column;
@@ -646,8 +646,40 @@ img {
   justify-self: center;
 }
 
+/*==============================*/
+
+/*=============== CONTACT PAGE ===============*/
+.contact__container,
+.contact__data {
+  gap: 2rem;
+}
+
+.contact__card {
+  padding: 1rem;
+  background-color: var(--white-color);
+  border-radius: 1rem;
+}
+
+.contact__card h5 {
+  color: var(--gray-color);
+}
+
+.contact__link {
+  font-size: var(--h3-font-size);
+  color: var(--first-color)
+}
+
+.social__links {
+  display: flex;
+  gap: 1rem;
+}
+
+
+
+
 @media screen and (min-width: 768px) {
-  .two__columns {
+  .two__columns,
+  .contact__data {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -724,7 +756,7 @@ img {
 
   .top__footer__data,
   .contact__footer__data,
-  .social__links,
+  .social__footer__links,
   .bottom__footer__data {
     flex-direction: row;
     justify-content: space-between;
@@ -743,6 +775,11 @@ img {
 
   .services__description__container {
     grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+  }
+
+  .contact__container {
+    grid-template-columns: 400px 1fr;
     align-items: start;
   }
 
