@@ -666,7 +666,12 @@ img {
 
 .contact__link {
   font-size: var(--h3-font-size);
-  color: var(--first-color)
+  color: var(--first-color);
+  transition: all .4s;
+}
+
+.contact__link:hover {
+  color: var(--first-color-alt);
 }
 
 .social__links {
