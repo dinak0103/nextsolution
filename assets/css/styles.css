@@ -569,6 +569,40 @@ img {
 
 /*==============================*/
 
+/*=============== SERVICES PAGE ===============*/
+.services__tabs {
+  display: flex;
+  gap: 2rem;
+  max-width: 280px;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-self: center;
+}
+
+.services__tabs .tab {
+  font-size: var(--h3-font-size);
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, .04);
+}
+
+.subservices__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.subservices__card {
+  background-color: var(--white-color);
+  padding: 1rem;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, .04);
+  border-radius: 1rem;
+  align-content: start;
+}
+
+
+
+/*==============================*/
+
 /*=============== CASES PAGE ===============*/
 
 .main__case__card {
@@ -724,6 +758,11 @@ img {
   .how__we__work__cards {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .home__services__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 1024px){
@@ -830,6 +869,10 @@ img {
     align-items: center;
   }
 
+  .subservices__card {
+    max-width: 480px;
+  }
+
 }
 
 @media screen and (min-width: 1200px){
@@ -840,6 +883,10 @@ img {
   .cases__cards__row,
   .reviews__cards__row {
     justify-content: space-between;
+  }
+
+  .subservices__card {
+    max-width: 592px;
   }
 
 }
