@@ -368,7 +368,6 @@ img {
   gap: 2rem;
 }
 
-.services__cards__row,
 .cases__cards__row,
 .reviews__cards__row {
   display: flex;
@@ -385,10 +384,6 @@ img {
   border-radius: 16px;
   padding: 16px;
   align-content: space-between;
-}
-
-.services__card {
-  max-width: 369px;
 }
 
 .services__title,
@@ -720,11 +715,13 @@ img {
 
 @media screen and (min-width: 768px) {
   .two__columns,
-  .contact__data {
+  .contact__data,
+  .services__cards__row {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .three__columns {
+  .three__columns,
+  .how__we__work__cards {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -840,7 +837,6 @@ img {
     margin-inline: auto;
   }
 
-  .services__cards__row,
   .cases__cards__row,
   .reviews__cards__row {
     justify-content: space-between;
