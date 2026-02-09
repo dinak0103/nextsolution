@@ -78,13 +78,13 @@ button {
 
 h1 {
   font-weight: var(--font-bold);
-  line-height: 120%;
+  line-height: 110%;
   color: var(--first-color);
 }
 
 h2, h3, h4, h5 {
   font-weight: var(--font-semi-bold);
-  line-height: 120%;
+  line-height: 110%;
   color: var(--first-color);
 }
 
@@ -738,6 +738,25 @@ img {
   color: var(--first-color-alt);
 }
 
+/*==============================*/
+
+/*=============== LANDING PAGE ===============*/
+
+.landing__home__container {
+  justify-content: center;
+}
+
+.landing__home__container .main__btn,
+.landing__home__container .tab,
+.landing__home__container p  {
+  justify-self: center;
+}
+
+.landing__home__container p {
+  max-width: 790px;
+}
+
+
 @media screen and (min-width: 540px) {
 
   .client__image {
@@ -755,7 +774,8 @@ img {
   }
 
   .three__columns,
-  .how__we__work__cards {
+  .how__we__work__cards,
+  .landing__cards__row {
     grid-template-columns: repeat(3, 1fr);
   }
 
