@@ -756,6 +756,11 @@ img {
   max-width: 790px;
 }
 
+.landing__contact__title {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-bold);
+  color: var(--first-color);
+}
 
 @media screen and (min-width: 540px) {
 
